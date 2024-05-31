@@ -1,0 +1,52 @@
+.portfolioWrapper{
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1,h2{
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+  h1{
+    font-size: 50px;
+    line-height: 70px;
+  }
+  h2{
+    font-size: 34px;
+    line-height: 47.6px;
+    margin-bottom: 50px;
+    span{
+      font-weight: 700;
+    }
+  }
+  .imagesWrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+      max-width: 432px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolioWrapper{
+    h2{
+      max-width: 285px;
+    }
+  }
+}
+
+@media only screen and (max-width: 432px) {
+  .portfolioWrapper{
+    .imagesWrapper{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
