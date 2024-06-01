@@ -5,13 +5,11 @@ import Portfolio from "./portfolio/portfolio";
 import Features from "./features/features";
 import Footer from "./footer/footer";
 import style from "./landing.module.scss"
-import MobileHeader from "./header/mobileHeader";
 
 const Landing = () => {
     return (
         <div className={style.landingWrapper}>
             <Header/>
-            <MobileHeader/>
             <Home/>
             <Portfolio/>
             <Features/>

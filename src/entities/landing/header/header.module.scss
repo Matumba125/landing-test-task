@@ -1,19 +1,31 @@
 .headerWrapper{
   width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  background-color: #FFFFFF;
+}
+
+.navWrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 112px;
   padding: 0 80px;
   box-sizing: border-box;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.unTransparentHeader{
+  box-shadow: 0 0 15px 0px rgb(0 0 0)
+
 }
 
 .mobileHeaderWrapper{
   width: 100%;
   display: none;
-  flex-direction: column;
-  margin-bottom: 34px;
-  gap: 20px;
   .burgerWrapper{
     width: 100%;
     height: 56px;
@@ -56,10 +68,13 @@
 
 @media only screen and (max-width: 768px) {
   .headerWrapper{
+    align-items: flex-start;
+  }
+  .navWrapper{
     display: none;
   }
   .mobileHeaderWrapper{
-    display: flex;
+    display: block;
   }
 }
 

@@ -12,7 +12,7 @@ const navList = [
 
 const Portfolio = () => {
     return (
-        <div className={style.portfolioWrapper}>
+        <div id={'Portfolio'} className={style.portfolioWrapper}>
             <h1>Our Projects</h1>
             <h2>Check out other themes based on <strong>JEDI</strong></h2>
             <Navigation navList={navList} isHeader={false}/>

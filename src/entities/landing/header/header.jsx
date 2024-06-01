@@ -1,17 +1,27 @@
 import React from 'react';
-import Navigation from "../../../shared/ui/navigation";
 import style from './header.module.scss'
-import Logo from "../../../shared/ui/logo";
+import Nav from "./nav";
+import MobileNav from "./mobileNav";
 
-const navList = [
-    'home', 'portfolio', 'features', 'blog'
+export const navList = [
+    'Home', 'Portfolio', 'Features', 'Blog'
 ]
 
 const Header = () => {
+
+    document.addEventListener('scroll', ()=> {
+
+        if (window.scrollY >= 400) {
+            document.getElementById("head").className=(`${style.headerWrapper} ${style.unTransparentHeader}`)
+        } else {
+            document.getElementById("head").className=(style.headerWrapper)
+        }
+    });
+
     return (
-        <div className={style.headerWrapper}>
-            <Logo isWhite />
-            <Navigation navList={navList} isHeader={true}/>
+        <div id={'head'} className={style.headerWrapper}>
+            <Nav/>
+            <MobileNav/>
         </div>
     );
 };

@@ -5,7 +5,7 @@ import style from './features.module.scss'
 
 const Features = () => {
     return (
-        <div className={style.featuresWrapper}>
+        <div id={'Features'} className={style.featuresWrapper}>
             <h1>More and More Features</h1>
             <div className={style.featuresList}>
             {featuresList.map((el, index) => {

@@ -1,15 +1,11 @@
 import React, {useState} from 'react';
 import style from './header.module.scss'
-import Logo from "../../../shared/ui/logo";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Navigation from "../../../shared/ui/navigation";
+import {navList} from "./header";
 
-const navList = [
-    'Home', 'Portfolio', 'Features', 'Blog'
-]
-
-const MobileHeader = () => {
+const MobileNav = () => {
 
     const [openMenu, setOpenMenu] = useState(false)
     const [selectedItem, setSelectedItem] = useState(navList[0]);
@@ -34,9 +30,8 @@ const MobileHeader = () => {
                     <Navigation navList={navList} isHeader selectEl={onItemClick}/>
                 </div>
             </div>
-            <Logo isWhite/>
         </div>
     );
 };
 
-export default MobileHeader;
+export default MobileNav;

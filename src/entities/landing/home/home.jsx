@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import image from '../../../shared/img/home/headImg.png'
+import Logo from "../../../shared/ui/logo";
 
 const images = [
     {
@@ -18,7 +19,10 @@ const images = [
 
 const Home = () => {
     return (
-        <div id={'home'} className={style.homeWrapper}>
+        <div id={'Home'} className={style.homeWrapper}>
+            <div className={style.logo}>
+                <Logo isWhite/>
+            </div>
             <Swiper
                 slidesPerView={1}
                 navigation={true}

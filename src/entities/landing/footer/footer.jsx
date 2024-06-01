@@ -11,7 +11,7 @@ import ContactUs from "./contactUs";
 
 const Footer = () => {
     return (
-        <div className={style.footerWrapper}>
+        <div id={'Blog'} className={style.footerWrapper}>
         <div className={style.footerInfo}>
             <div className={style.mainInfo}>
                 <Logo/>

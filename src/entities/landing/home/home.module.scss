@@ -1,6 +1,11 @@
 .homeWrapper{
   width: 100%;
   position: relative;
+  margin-top: 112px;
+  .logo{
+    display: none;
+    margin-bottom: 34px;
+  }
   .customSwiper{
     height: 611px;
     width: 100%;
@@ -20,6 +25,15 @@
           object-fit: cover;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .homeWrapper{
+    margin-top: 76px;
+    .logo{
+      display: block;
     }
   }
 }
